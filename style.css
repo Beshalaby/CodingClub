@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+canvas{
+  position: fixed;
+  top: 0;
+  left: 0;
+  
+}
+
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+main {
+  position: absolute;
+  width: 100%;
+  background-color: #24252A;
+  font-family: 'Poppins', sans-serif;
+}
+
+li, a {
+  text-decoration: none;
+  display: inline-block;
+  list-style-type: none;
+  color: white;
+}
+
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 30px 10%;
+}
+
+.ulist{
+  margin-left: -10%;
+}
+
+.element {
+  padding: 0px 30px;
+}
+
+.element a {
+  padding: 20%;
+  border-radius: 99999px;
+}
+
+.element a {
+  transition: all 0.05s ease  0s;
+}
+
+.element :hover {
+  color: white;
+  background-color:rgb(66, 66, 190);
+}
+
+#logo{
+  margin-left: -10%;
+}
+
+.button {
+  color: white;
+  padding: 10px 40px;
+  background-color:rgb(66, 66, 190);
+  border-radius: 9999px;
+  border: none;
+  transition: all 0.15s ease  0s;
+}
+
+.main_body {
+  position: absolute;
+  background-color: #24252A;
+  color: white;
+  margin-top: 12%;
+  margin-left: 65vh;
+  width: 38%;
+  text-align: center;
+  border-radius: 20px;
+}
+
+.center-button {
+  color: white;
+  padding: 10px 40px;
+  background-color:rgb(66, 66, 190);
+  border-radius: 9999px;
+  border: none;
+  transition: all 0.15s ease  0s;
+}
+
+.buttons{
+  margin-bottom: 3%;
+}
+
+#center-learn-more{
+  margin-right: 10%;
+}
+
+#center-join{
+  margin-left: 10%;
+}
+
+#center-title{
+  padding: 5%;
+}
+
+#center-text{
+  padding-bottom: 4%;
+}
