@@ -16,7 +16,7 @@ canvas{
 main {
   position: absolute;
   width: 100%;
-  background-color: #24252A;
+  /*background-color: #24252A;*/
   font-family: 'Poppins', sans-serif;
 }
 
@@ -32,7 +32,7 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin: 30px 10%;
+  margin: 25px 10%;
 }
 
 .ulist{
@@ -46,15 +46,27 @@ header {
 .element a {
   padding: 20%;
   border-radius: 99999px;
+  display: inline-block;
+  position: relative;
 }
 
-.element a {
-  transition: all 0.05s ease  0s;
+
+.element a:after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #ffffff;
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
 }
 
-.element :hover {
-  color: white;
-  background-color:rgb(66, 66, 190);
+.element a:hover:after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
 }
 
 #logo{
